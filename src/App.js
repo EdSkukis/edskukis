@@ -1,19 +1,16 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Chart from './components/Chart';
-import DataTable from './components/DataTable';
+import About from './components/About';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main className="p-4">
-        <h1 className="text-2xl font-bold mb-4">Data Analyst Portfolio</h1>
-        <Chart />
-        <DataTable />
-      </main>
+    <div className="max-w-4xl mx-auto p-4 space-y-12">
+      <About />
+      <Skills />
+      <Experience />
+      <Contact />
     </div>
   );
 }
-
-export default App;
